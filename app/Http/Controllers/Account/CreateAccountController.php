@@ -37,7 +37,7 @@ class CreateAccountController extends Controller
     {
         $this->account->create([
             'account_number' => $this->generateAccountNumber(),
-            'balance' => 0,
+            'balance' => 10000,
             'currency' => $request->input('currency'),
             'name' => $request->input('name'),
             'user_id' => auth()->user()->id
