@@ -9,7 +9,6 @@ use App\Models\Crypto\CryptoTransaction;
 use App\Models\Crypto\CryptoWallet;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
 class TradeCryptoController extends Controller
@@ -39,7 +38,9 @@ class TradeCryptoController extends Controller
             return redirect()->back()->with('message', $message);
         }
 
-        $existingCryptoCurrency = CryptoCurrency::where('symbol', $cryptoCurrency->symbol)->first();
+        $existingCryptoCurrency = CryptoCurrency::where('symbol', $cryptoCurrency->symbol)
+            ->where('wallet_id', $user->wallet->id)
+            ->first();
 
         if ($existingCryptoCurrency) {
             $existingCryptoCurrency->increment('amount', $amount);
