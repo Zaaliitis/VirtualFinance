@@ -1,7 +1,4 @@
 <x-app-layout>
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-customWhite overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="p-6 lg:p-8 bg-customWhite">
                     @if (session('message'))
                         <div class="{{ session('message')['type'] }} text-xl">
@@ -74,7 +71,4 @@
                     @endif
                 </div>
 
-            </div>
-        </div>
-    </div>
 </x-app-layout>

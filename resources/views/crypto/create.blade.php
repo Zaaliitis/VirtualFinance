@@ -1,7 +1,4 @@
 <x-app-layout>
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-customWhite overflow-hidden shadow-xl sm:rounded-lg">
                 <h1 class="flex justify-center mt-8 text-2xl font-medium text-gray-900">
                     Create an investment wallet!
                 </h1>
@@ -18,7 +15,5 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
+
 </x-app-layout>

@@ -1,7 +1,4 @@
 <x-app-layout>
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-customWhite overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="flex justify-center items-center px-4 py-3">
                     @if ($userHasWallet)
                         <form method="GET" action="{{ url('/crypto/history') }}">
@@ -94,7 +91,5 @@
                 </div>
                 <p class="text-gray-400 flex justify-center mb-4">*Price and price changes are updated every 10 minutes,
                     purchasing a currency will use real time data</p>
-            </div>
-        </div>
-    </div>
+
 </x-app-layout>

@@ -1,7 +1,5 @@
 <x-app-layout>
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-customWhite overflow-hidden shadow-xl sm:rounded-lg flex justify-center">
+            <div class="flex justify-center">
                 <div class="p-6">
                     @if (session('message'))
                         <div class="{{ session('message')['type'] }} text-xl">
@@ -35,6 +33,4 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 </x-app-layout>

@@ -1,7 +1,4 @@
 <x-app-layout>
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-customWhite overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="p-6 lg:p-8 bg-customWhite border-b border-gray-200">
                     <h1 class="text-2xl font-medium text-gray-900">Confirm Account Deletion</h1>
                     <p class="mt-4">Are you sure you want to delete the account with number: {{ $account->account_number }}?</p>
@@ -11,7 +8,4 @@
                         <x-button class="bg-red-700 hover:bg-red-500" type="submit">Delete Account</x-button>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
 </x-app-layout>

@@ -1,7 +1,6 @@
 <x-app-layout>
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-customWhite overflow-hidden shadow-xl sm:rounded-lg flex justify-center">
+
+            <div class="flex justify-center">
                 <div class="p-6">
                     <h2 class="text-2xl font-semibold text-center">Crypto Transaction History</h2>
                     @if ($transactions->isEmpty())
@@ -34,6 +33,5 @@
                     @endif
                 </div>
             </div>
-        </div>
-    </div>
+
 </x-app-layout>
