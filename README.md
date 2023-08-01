@@ -1,6 +1,9 @@
 # VirtualFinance - Online Banking System with Crypto Investment Platform
 
-![VirtualFinance Logo](public/images/LogoTextWhite.png)
+<p align="center">
+  <img alt="VirtualFinanceLogo" src="public/images/LogoTextWhite.png">
+</p>
+
 
 VirtualFinance is a web-based online banking system with a crypto investment platform built using Laravel Framework 10.13.5. It provides users with the ability to manage their finances, make transactions, and invest in cryptocurrencies easily. The platform uses Tailwind CSS for styling and Fortify for authentication, ensuring a seamless and secure user experience.
 
