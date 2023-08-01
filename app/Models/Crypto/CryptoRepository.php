@@ -21,7 +21,7 @@ class CryptoRepository extends Model
 
         $parameters = [
             'start' => 1,
-            'limit' => 100,
+            'limit' => 500,
             'convert' => 'EUR'
         ];
 
@@ -46,7 +46,7 @@ class CryptoRepository extends Model
     {
         $parameters = [
             'start' => 1,
-            'limit' => 100,
+            'limit' => 500,
             'convert' => 'EUR'
         ];
 
